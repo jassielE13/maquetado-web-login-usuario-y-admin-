@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="ADMIN.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Gestión de Productos</h1>
+    </header>
+
+    <!-- Sección para agregar un nuevo producto -->
+    <section id="add-product-section">
+        <h2>Agregar Producto</h2>
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Nombre del producto" required>
+            <input type="number" id="product-price" placeholder="Precio" required>
+            <input type="file" id="product-image" accept="image/*" required> <!-- Campo de imagen -->
+            <button type="button" id="add-product-button">Agregar Producto</button>
+        </form>
+    </section>
+
+    <!-- Lista de productos -->
+    <section id="product-list">
+        <h2>Lista de Productos</h2>
+        <div id="products-container"></div>
+    </section>
+
+    <script src="ADMIN.js"></script> <!-- Enlace a tu archivo JS -->
+</body>
+</html>
+
